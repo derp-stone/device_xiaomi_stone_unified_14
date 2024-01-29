@@ -16,6 +16,7 @@ $(call inherit-product, device/xiaomi/stone/device.mk)
 
 #EvolutionX prop
 EVO_BUILD_TYPE := OFFICIAL
+WITH_GMS := true
 
 # Device props
 TARGET_SUPPORTS_QUICK_TAP := true
