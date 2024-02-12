@@ -9,14 +9,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/evolution/config/common_full_phone.mk)
+$(call inherit-product, vendor/derp/config/common_full_phone.mk)
 
 # Inherit from stone device
 $(call inherit-product, device/xiaomi/stone/device.mk)
 
-#EvolutionX prop
-EVO_BUILD_TYPE := OFFICIAL
-WITH_GMS := true
 
 # Device props
 TARGET_SUPPORTS_QUICK_TAP := true
@@ -30,8 +27,11 @@ USE_PIXEL_CHARGER := true
 # Use Prebuilt Kernel
 PREBUILT_KERNEL := true
 
+# DerpFest Offcial
+DERP_BUILDTYPE := Official
+
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := evolution_stone
+PRODUCT_NAME := derp_stone
 PRODUCT_DEVICE := stone
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi

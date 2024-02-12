@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/evolution_stone.mk
+    $(LOCAL_DIR)/derp_stone.mk
 
 COMMON_LUNCH_CHOICES := \
-    evolution_stone-user \
-    evolution_stone-userdebug \
-    evolution_stone-eng
+    derp_stone-user \
+    derp_stone-userdebug \
+    derp_stone-eng
